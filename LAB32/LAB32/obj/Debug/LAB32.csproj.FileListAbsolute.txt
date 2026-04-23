@@ -1,0 +1,10 @@
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\bin\Debug\LAB32.exe.config
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\bin\Debug\LAB32.exe
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\bin\Debug\LAB32.pdb
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.csproj.AssemblyReference.cache
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.Form1.resources
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.Properties.Resources.resources
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.csproj.GenerateResource.cache
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.csproj.CoreCompileInputs.cache
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.exe
+C:\Users\student.MP1-08\source\repos\LAB32\LAB32\obj\Debug\LAB32.pdb
