@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    #header,#result,#aggregate{
+    border: 2px solid purple;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    }
+    #header{
+        background-color: lightcyan;
+    }
+    #main{
+        background-color: lightgoldenrodyellow;
+        flex: auto;
+    }
+    #result{
+        order: 1;
+    }
+    #aggregate{
+        order: 2;
+    }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <div id="header">
+    <h1 id="SubjectCode">Subject Code</h1>
+    <h1 id="SubjectName">Subject Name</h1>
+    </div>
+    <div id="main">
+    <p id="name">Student Name</p>
+    <p id="studid">Matrics Id</p>
+    <div id="result">
+        <div id="subject">
+            <p id="assignment"></p>
+            <p id="labtests"></p>
+            <p id="project"></p>
+            <p id="final"></p>
+        </div>
+        <div id="aggregate">
+                <p id="high">a</p>
+                <p id="low">a</p>
+                <p id="average"></p>
+                <p id="gred"></p>
+                <p id="status">a</p>
+                <p id="feedback"></p>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+/*         console.log("Hello person")
+        document.getElementById("SubjectCode").innerHTML="DITM 2213";
+        document.getElementById("SubjectName").innerHTML="WEB PROGRAMMING";
+        document.getElementById("SubjectCode").style.color="purple";
+        document.getElementById("SubjectName").style.color="light purple"; */
+        
+        window.alert("Hello Welcome to Nowhere")
+        let answer  = window.confirm("You Shore?")
+        if(answer){
+            let name = window.prompt("Enter Your Name","Alin");
+            let studid = window.prompt("Enter Your Matric Number : ","D01111111");
+            document.getElementById("header").style.backgroundColor="green";
+            window.alert("YOU ARE IN THE RIGHT CLASS")
+            document.getElementById("name").innerHTML="Nama : " +name;
+            document.getElementById("studid").innerHTML="Matric Id : " + studid;
+            let assignment = parseFloat(window.prompt("Enter Your Assignment Marks",80));
+            let labtest = parseFloat(window.prompt("Enter Your Labtest Marks",80));
+            let project = parseFloat(window.prompt("Enter Your Project Marks",80));
+            let final = parseFloat(window.prompt("Enter Your Final Exam Marks",80));
+            document.getElementById("header").style.backgroundColor="green";
+            document.getElementById("assignment").innerHTML="Assignment Marks : " + assignment;
+            document.getElementById("labtests").innerHTML="Labtest Marks : " + labtest;
+            document.getElementById("project").innerHTML="Project Marks : " + project;
+            document.getElementById("final").innerHTML="Final Exam Marks : " + final;
+            let average = (assignment+labtest+project+final)/4;
+            let highest = Math.max(assignment,labtest,project,final);
+            let lowest = Math.min(assignment,labtest,project,final);
+            document.getElementById("high").innerHTML="Highest Marks : " +highest;
+            document.getElementById("low").innerHTML="Lowest Marks : " +lowest;
+            document.getElementById("average").innerHTML="Average : " +average;
+            checkGrd(average);
+        }else{
+            window.alert("YOU ARE IN THE WRONG CLASS")
+            document.getElementById("header").style.backgroundColor="red";
+        }
+
+        function checkGrd(average){
+            let gred;
+            let status;
+            let  feedback;
+
+            if(average<40){
+                gred = "E";
+                status ="FAILED";
+                feedback ="GOOLDLUCK LIL G" 
+            }else{
+                status ="PASS"
+            }
+            if(average >=80){
+                gred = "A";
+                feedback ="Great Job lil G"
+            }else if (average >=60&& average <80){
+                gred = "B";
+                feedback ="Lil harder lil G"
+            }else if (average >=41&& average <60){
+                gred = "C";
+                feedback ="Well you pass, lil G"}
+
+            document.getElementById("gred").innerHTML="Grade : " +gred;
+            document.getElementById("status").innerHTML="Status : " +status;
+            document.getElementById("feedback").innerHTML="Feedback : " +Feedback;
+        }
+
+
+    </script>
+    
+
+</body>
+</html>
